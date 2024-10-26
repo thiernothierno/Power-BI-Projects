@@ -1,1 +1,5 @@
+## Further Business Analysis
 
+### In this blog I will attempt to answer some business questions related to the cleaned data I worked on using pandas. 
+
+   
