@@ -1,6 +1,6 @@
 ## Further Business Analysis using SQL
 
-## In this blog I will attempt to answer some business questions based on the cleaned data I worked on in the data exploration file. 
+## In this blog I will attempt to answer some business questions based on the data I worked on in the data exploration file. 
 
 ### Table Initialization
 ```
