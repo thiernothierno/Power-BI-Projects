@@ -63,7 +63,17 @@ with res as(
 select * from res
 where days >= extract(day from current_date) - 10
 ```
-
+### 9- Find the most common reaction type for the 5 most populated category.
+```
+select category, reaction_type from
+(
+	select
+		category, reaction_type,
+		rank() over(partition by category order by count(score) desc) as category_type
+		from accenture
+		group by 1,2
+) as temp where category_type = 1 limit 5
+```
 
 
 
