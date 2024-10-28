@@ -88,7 +88,15 @@ select category, reaction_type from
 		group by 1,2
 ) as temp where category_type = 1 limit 5
 ```
-
+### 10-  Return the date, content type, reaction type and sentiment of the post with the highest score.
+```
+select
+	datetime, content_type, reaction_type, sentiment, count(score)
+from accenture
+group by 1,2,3,4
+order by 5 desc 
+limit 1
+```
 
 
 
