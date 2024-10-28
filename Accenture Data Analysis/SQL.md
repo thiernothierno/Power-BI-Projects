@@ -43,7 +43,7 @@ with res as
    )
 select * from res where year = 2020
 ```
-### 5- Count the number of content in each content type and list their in hightest to lowest order.
+### 5- Count the number of content in each content type and list them in order from hightest to lowest.
 ```
 select
    content_type, count(content_id) 
